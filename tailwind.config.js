@@ -19,10 +19,10 @@ export default {
         customPurple : '#1b1e55'
       },
       backgroundImage: {
-        'heroBanner': "url('./src/assets/Hero/heroBanner.png')", // Define custom background image
-        'heroBanner-Mob': "url('./src/assets/Hero/heroBannerMob.png')",
-        'arrow-bg' : "url(./src/assets/arrow-bg-main.png)",
-        'arrow-left-bg' : "url(./src/assets/arrow-bg.png)",
+        'heroBanner': "url('/assets/Hero/heroBanner.png')", // Define custom background image
+        'heroBanner-Mob': "url('/assets/Hero/heroBannerMob.png')",
+        'arrow-bg' : "url(/assets/arrow-bg-main.png)",
+        'arrow-left-bg' : "url(/assets/arrow-bg.png)",
       },
     },
     container:{
