@@ -1,0 +1,157 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.list-hover:hover span{
+    color: #e41a26;
+}
+
+.case-studies-bg{
+    @apply after:content-[""] after:bg-customPurple after:absolute after:top-0 after:left-0 after:-z-10 after:h-[60%] after:w-full after:2xl:h-[73%] after:xl:h-[69%] after:lg:h-[64%] after:h-[77%]
+}
+
+.case-study-left{
+    @apply sm:w-[55%] lg:w-[45%] xl:w-[40%] 2xl:w-[38.6%]
+}
+
+.case-study-right{
+    @apply sm:w-[45%] lg:w-[55%] xl:w-[60%] 2xl:w-[61.4%];
+}
+
+.btn-purple{
+    @apply bg-customPurple text-white  border  font-medium hover:bg-white hover:text-customPurple transition-all duration-500  px-[18px] rounded-[40px] after:content-[''] after:w-[35px] after:h-[11px] after:bg-arrow-bg after:bg-no-repeat after:bg-[left_-15px_top_-38px] after:inline-block hover:after:bg-[left_10px_top_-38px] after:duration-150;
+}
+
+.btn-outline-left{
+    @apply border rounded-[40px] py-[14px] px-[26px] after:content-[''] after:w-[21px] after:h-[11px] after:bg-arrow-left-bg after:bg-no-repeat after:bg-[left_-26px_top_-38px] after:inline-block after:rotate-180;
+}
+
+.btn-outline-right{
+    @apply border border-customPurple rounded-[40px] py-[14px] px-[26px] after:content-[''] after:w-[21px] after:h-[11px] after:bg-arrow-left-bg after:bg-no-repeat after:bg-[left_-26px_top_-38px] hover:after:bg-[left_-1px_top_-38px] after:inline-block after:duration-150;
+}
+
+.custom-head::before{
+    content: '';
+    width: 1px;
+    height: 16px;
+    background-color: #767899;
+    position: absolute;
+    top: 0;
+    margin-top: -8px;
+}
+.custom-head::after{
+    content: '';
+    width: 1px;
+    height: 16px;
+    background-color: #767899;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: -8px;
+}
+
+.count-no{
+    @apply border-2 inline-flex rounded-[50%] w-[55px] h-[55px] font-medium text-[18px] text-customPurple items-center justify-center
+}
+
+.cta-border{
+    border-image: linear-gradient(to right, #211e54 0, #7e1c3e 58%, #e21a27 100%);
+    border-image-slice: 1;
+}
+
+.cta-border button{
+    @apply text-white text-[20px] font-medium py-4 px-[25px]  rounded-[40px] border-2 border-white bg-gradient-to-r from-[#211e54] via-[#7e1c3e] to-[#e21a27] hover:border-customRed hover:text-customPurple;   
+}
+
+.cta-border button:hover{
+    background: none;
+}
+
+.btn-digital{
+    @apply border border-white rounded-[40px] py-[14px] px-[26px] after:content-[""]
+              after:bg-arrow-bg after:w-[21px] after:h-[11px] after:bg-no-repeat after:bg-[left_-28px_top_-38px] after:inline-block
+}
+
+.heading-1{
+    @apply text-[24px] md:text-[30px] lg:text-[28px] font-[350] leading-[1.2] tracking-[.3px] mb-[25px];
+}
+
+.para-1{
+    @apply my-4 text-[16px] font-medium leading-normal;
+}
+
+.service-icon{
+    @apply w-10 h-10 rounded-full bg-[#bbc] flex justify-center items-center;
+}
+
+.service-icon span{
+    @apply inline-block bg-arrow-left-bg w-4 h-4 transition-all duration-150 bg-[left_-21px_top_-2px] bg-no-repeat 
+}
+
+.service-header:hover .service-icon span{
+    @apply bg-[left_-3px_top_-20px];
+}
+
+.digital-heading{
+    @apply relative text-center text-[25px] 2xl:text-[30px] font-[300] leading-none tracking-[0.3px] pb-[28px] border-b border-[#767899] mb-[28px] before:content-[""] before:w-[1px] before:h-[16px] before:inline-block before:bg-[#767899] before:absolute before:left-0 before:bottom-[-8px]
+    after:content-[""] after:w-[1px] after:h-[16px] after:inline-block after:bg-[#767899] after:absolute after:right-0 after:bottom-[-8px]
+}
+
+.digital-li{
+    @apply relative text-[16px] font-medium leading-[1.07] pl-4 mb-[14px] before:content-[""] before:w-[5px] before:h-[5px] before:rounded-full before:inline-block before:bg-customPurple before:absolute before:left-0 before:top-[7px]
+}
+
+.digital-link{
+    @apply mx-auto group-hover:bg-customPurple  hover:justify-around transition-all duration-300 ;
+}
+
+.digital-link:hover p{
+    @apply block
+}
+.digital-link:hover span{
+    @apply bg-[left_-3px_top_-20px];
+}
+
+.btn-testimonial{
+    @apply border border-customPurple rounded-[40px] py-[14px] px-[26px] after:content-[""]
+              after:bg-arrow-left-bg after:w-[21px] after:h-[11px] after:bg-no-repeat after:bg-[left_-28px_top_-38px] after:inline-block
+}
+
+.blog{
+    @apply before:content-[''] before:inline-block before:absolute before:w-full before:h-full before:border-2 before:border-customPurple before:top-[0] before:left-[0] before:rounded-md before:transition-all before:duration-500 before:pointer-events-none before:opacity-0
+}
+
+
+.blog::before{
+    @apply lg:hover:scale-[0.92] lg:hover:opacity-[1];
+
+}
+
+.blog-heading{
+    @apply before:content-[""] before:w-[1px] before:h-[16px] before:inline-block before:bg-[#767899] before:absolute before:left-0 before:bottom-[-8px]
+    after:content-[""] after:w-[1px] after:h-[16px] after:inline-block after:bg-[#767899] after:absolute after:right-0 after:bottom-[-8px]
+}
+
+.footer-heading{
+    @apply mb-[18px] text-white font-medium text-[20px] 2xl:text-[22px] 2xl:mb-[21px] leading-[1.16667];
+}
+
+.footer-list{
+    @apply mb-[36px] 2xl:mb-[43px]
+}
+
+.footer-list li{
+    @apply mb-[12px] xl:mb-[10px] 2xl:mb-[7px];
+}
+
+.footer-list a{
+    @apply font-medium transition-all duration-300 text-[14px] leading-normal tracking-[.3px]
+}
+
+.footer-list a:hover{
+    @apply text-white underline
+}
+
+.footer-country{
+    @apply text-white text-[15px] font-bold leading-none xl:text-[14px] mb-[12px] flex items-center gap-4
+}
